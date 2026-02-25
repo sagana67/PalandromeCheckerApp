@@ -1,5 +1,11 @@
 public class PalindromeCheckerApp {
     public static void main(String[] args) {
-        System.out.println("Welcome to My App");
+        String word = "madam";
+        String reverse = new StringBuilder(word).reverse().toString();
+
+        if(word.equals(reverse))
+            System.out.println(word + " is a palindrome");
+        else
+            System.out.println(word + " is not a palindrome");
     }
 }
